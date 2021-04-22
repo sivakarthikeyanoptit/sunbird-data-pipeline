@@ -33,7 +33,22 @@ processing_kafka_overriden_topics:
   - name: dev.sl.survey.evidence.druid
     retention_time: 172800000
     replication_factor: 1
-  - name: telemetry.raw
+  - name: dev.sl.submission.rating.raw
+    retention_time: 172800000
+    replication_factor: 1
+  - name: dev.sl.incomplete.observation.raw
+    retention_time: 172800000
+    replication_factor: 1
+  - name: dev.sl.notification.raw
+    retention_time: 172800000
+    replication_factor: 1
+  - name: dev.sl.incomplete.survey.raw
+    retention_time: 172800000
+    replication_factor: 1
+  - name: dev.sl.improvement.project.submission
+    retention_time: 172800000
+    replication_factor: 1
+    - name: telemetry.raw
     retention_time: 172800000
     replication_factor: 1
   - name: telemetry.valid
@@ -176,6 +191,21 @@ processing_kafka_topics:
   - name: dev.sl.survey.evidence.druid
     num_of_partitions: 1
     replication_factor: 1 
+  - name: dev.sl.submission.rating.raw
+    num_of_partitions: 1
+    replication_factor: 1
+  - name: dev.sl.incomplete.observation.raw
+    num_of_partitions: 1
+    replication_factor: 1
+  - name: dev.sl.notification.raw
+    num_of_partitions: 1
+    replication_factor: 1
+  - name: dev.sl.incomplete.survey.raw
+    num_of_partitions: 1
+    replication_factor: 1
+  - name: dev.sl.improvement.project.submission
+    num_of_partitions: 1
+    replication_factor: 1
   - name: system.command
     retention_time: 3600
     num_of_partitions: 1
