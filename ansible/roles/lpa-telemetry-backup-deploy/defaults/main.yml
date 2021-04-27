@@ -72,7 +72,7 @@ secor_service_name:
     service_monitor_schedule_hr: "23"
     service_monitor_schedule_min: "50"
     message_channel_identifier: ""
-    message_parser: "com.pinterest.secor.parser.PatternDateMessageParser"	
+    message_parser: "com.pinterest.secor.parser.PatternDateMessageParser"
   sl_survey_druid:
     consumer_group: "{{ env }}.sl.survey.druid.backup"
     base_path: "survey_druid"
