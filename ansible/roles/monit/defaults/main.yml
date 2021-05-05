@@ -191,7 +191,7 @@ monit_redis:
 monit_faust_observation:
   app_name: faust_observation
   custom_start: /bin/systemctl start faust_observation.service
-  custom_stop: /bin/systemctl stop faust_observation.service	
+  custom_stop: /bin/systemctl stop faust_observation.service
   user: analytics
   pid_file: /home/analytics/sbin/faust_observation.pid
   retry: 3
