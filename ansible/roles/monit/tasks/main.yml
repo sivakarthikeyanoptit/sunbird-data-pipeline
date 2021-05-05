@@ -10,7 +10,7 @@
     dest: "{{item.dest}}"
     mode: "{{item.mode}}" 
   with_items:
-    - { src: 'files/monit_init', dest: '/etc/init.d/monit', mode: '0755' }
+    - { src: 'files/monit_init', dest: '/etc/systemd/system', mode: '0755' }
     - { src: 'files/monitrc', dest: '/etc/monit/monitrc', mode: '0700' }
     - { src: 'files/monit_bin', dest: '/usr/bin/monit', mode: '0755' }   
     - { src: 'files/monit_default', dest: '/etc/default/monit', mode: '0644' } 
