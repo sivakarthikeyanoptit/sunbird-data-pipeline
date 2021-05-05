@@ -215,7 +215,7 @@ monit_faust_survey:
 monit_faust_survey_evidence:
   app_name: faust_survey_evidence
   custom_start: /bin/systemctl start faust_survey_evidence.service
-  custom_stop: /bin/systemctl stop faust_survey_evidence.service	
+  custom_stop: /bin/systemctl stop faust_survey_evidence.service
   user: analytics
   pid_file: /home/analytics/sbin/faust_survey_evidence.pid
   retry: 3   
